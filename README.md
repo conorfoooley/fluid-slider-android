@@ -7,10 +7,6 @@
 
 Inspired by [Virgil Pana](https://dribbble.com/virgilpana) [shot](https://dribbble.com/shots/3868232-Fluid-Slider)
 
-# Check this library on other platforms:
-<a href="https://github.com/Ramotion/fluid-slider">
-<img src="https://github.com/ramotion/navigation-stack/raw/master/Swift@2x.png" width="178" height="81"></a>
-
 **Looking for developers for your project?**<br>
 This project is maintained by Ramotion, Inc. We specialize in the designing and coding of custom UI for Mobile Apps and Websites.
 
@@ -26,15 +22,15 @@ The [Android mockup](https://store.ramotion.com/product/samsung-galaxy-s8-mockup
 
 ## Installation
 ​
-Just download the package from [here](http://central.maven.org/maven2/com/ramotion/fluidslider/fluid-slider/0.1.0/fluid-slider-0.1.0.aar) and add it to your project classpath, or just use the maven repo:
+Just download the package from [here]() and add it to your project classpath, or just use the maven repo:
 
 Gradle:
 ```groovy
-compile 'com.ramotion.fluidslider:fluid-slider:0.1.0'
+compile '???'
 ```
 SBT:
 ```scala
-libraryDependencies += "com.ramotion.fluidslider" % "fluid-slider" % "0.1.0"
+libraryDependencies += "???"
 ```
 Maven:
 ```xml
@@ -45,6 +41,7 @@ Maven:
   <type>aar</type>
 </dependency>
 ```
+
 
 ## Basic usage
 
