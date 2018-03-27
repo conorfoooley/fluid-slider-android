@@ -26,22 +26,22 @@ The [Android mockup](https://store.ramotion.com/product/samsung-galaxy-s8-mockup
 
 ## Installation
 ​
-Just download the package from [here](http://central.maven.org/maven2/com/ramotion/fluidslider/fluid-slider/0.1.1/fluid-slider-0.1.1.aar) and add it to your project classpath, or just use the maven repo:
+Just download the package from [here](http://central.maven.org/maven2/com/ramotion/fluidslider/fluid-slider/0.2.0/fluid-slider-0.2.0.aar) and add it to your project classpath, or just use the maven repo:
 
 Gradle:
 ```groovy
-compile 'com.ramotion.fluidslider:fluid-slider:0.1.1'
+implementation 'com.ramotion.fluidslider:fluid-slider:0.2.0'
 ```
 SBT:
 ```scala
-libraryDependencies += "com.ramotion.fluidslider" % "fluid-slider" % "0.1.1"
+libraryDependencies += "com.ramotion.fluidslider" % "fluid-slider" % "0.2.0"
 ```
 Maven:
 ```xml
 <dependency>
   <groupId>com.ramotion.fluidslider</groupId>
   <artifactId>fluid-slider</artifactId>
-  <version>0.1.1</version>
+  <version>0.2.0</version>
   <type>aar</type>
 </dependency>
 ```
@@ -65,6 +65,7 @@ slider.endTrackingListener = { /* action on slider released */ }
 
 Here is simple example, how to change `FluidSlider` range.
 ```kotlin
+// Kotlin
 val max = 45
 val min = 10
 val total = max - min
@@ -74,6 +75,31 @@ slider.positionListener = { pos -> slider.bubbleText = "${min + (total  * pos).t
 slider.position = 0.3f
 slider.startText ="$min"
 slider.endText = "$max"
+
+// Java
+final FluidSlider slider = findViewById(R.id.fluidSlider);
+slider.setBeginTrackingListener(new Function0<Unit>() {
+    @Override
+    public Unit invoke() {
+        Log.d("D", "setBeginTrackingListener");
+        return Unit.INSTANCE;
+    }
+});
+
+slider.setEndTrackingListener(new Function0<Unit>() {
+    @Override
+    public Unit invoke() {
+        Log.d("D", "setEndTrackingListener");
+        return Unit.INSTANCE;
+    }
+});
+
+// Or Java 8 lambda
+slider.setPositionListener(pos -> {
+    final String value = String.valueOf( (int)((1 - pos) * 100) );
+    slider.setBubbleText(value);
+    return Unit.INSTANCE;
+});
 ```
 
 Here are the attributes you can specify through XML or related setters:
