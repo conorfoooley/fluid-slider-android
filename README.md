@@ -1,5 +1,5 @@
 [![header](./header.png)](https://ramotion.com?utm_source=gthb&utm_medium=special&utm_campaign=fluid-slider-android-logo)
-<img src="https://github.com/Ramotion/fluid-slider-android/blob/master/Fluid-slider.gif" width="493" height="450" />
+<img src="https://github.com/Ramotion/fluid-slider-android/blob/master/Fluid_slider.gif" width="400" height="300" />
 <br><br/>
 
 # Fluid Slider for Android
@@ -115,6 +115,9 @@ Here are the attributes you can specify through XML or related setters:
 * `duration` - Duration of "bubble" rise in milliseconds.
 * `initial_position` - Initial positon of "bubble" in range form `0.0` to `1.0`.
 * `size` - Height of slider. Can be `small` (40dp) and `normal` (56dp).
+
+
+This library is a part of a <a href="https://github.com/Ramotion/android-ui-animation-components-and-libraries"><b>selection of our best UI open-source projects.</b></a>
 
 ## License
 ​
