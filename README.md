@@ -119,6 +119,10 @@ Here are the attributes you can specify through XML or related setters:
 
 This library is a part of a <a href="https://github.com/Ramotion/android-ui-animation-components-and-libraries"><b>selection of our best UI open-source projects.</b></a>
 
+## Third Party Bindings
+ ### React Native
+You may now use this library with [React Native](https://github.com/facebook/react-native) via the module [here](https://github.com/prscX/react-native-fluidic-slider)
+
 ## License
 ​
 Fluid Slider for Android is released under the MIT license.
@@ -129,7 +133,7 @@ Try our UI components in our mobile app. Contact us if interested.
 
 <a href="https://play.google.com/store/apps/details?id=com.ramotion.showroom" >
 <img src="https://raw.githubusercontent.com/Ramotion/react-native-circle-menu/master/google_play@2x.png" width="104" height="34"></a>
-<a href="mailto:alex.a@ramotion.com?subject=Project%20inquiry%20from%20Github">
+<a href="https://dev.ramotion.com/gthbr">
 <img src="https://github.com/ramotion/gliding-collection/raw/master/contact_our_team@2x.png" width="187" height="34"></a>
 <br>
 <br>
